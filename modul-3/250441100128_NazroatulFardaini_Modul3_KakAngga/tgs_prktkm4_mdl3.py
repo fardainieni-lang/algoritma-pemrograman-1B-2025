@@ -12,7 +12,12 @@ while True:
         daftar_barang = daftar_barang + barang + "Rp" + str(harga_barang) + " "
         tambah_barang = input("apakah ingin menambahkan barang lagi? (y/n): ")
         if tambah_barang == "n":
-            break
+           break
+        elif tambah_barang != "y":
+           print("input yang anda masukkan salah.mohon memasukan (y/n)")
+           tambah_barang = input("apakah ingin menambahkan barang lagi? (y/n): ")
+           
+        
 # tampilan struk pembelian
     print("STRUK PEMBELIAN")
     print("nama pembeli: ", nama)
@@ -22,7 +27,13 @@ while True:
     print("total harga: Rp", total_harga)
     print("terima kasih telah berbelanja di IndoMie")
     print("")
+    lanjutkan_perulangan = True
     ada_pembeli_berikutnya = input("apakah ada pembeli berikutnya? (y/n): ")
     if ada_pembeli_berikutnya == "n":
      print("kasir selesai bekerja. program berhenti")
      break
+    elif ada_pembeli_berikutnya != "y":
+       print("input yang anda masukkan salah.mohon memasukan (y/n)")
+       ada_pembeli_berikutnya = input("apakah ada pembeli berikutnya? (y/n): ")
+
+       
